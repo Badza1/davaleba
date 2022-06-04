@@ -1,0 +1,163 @@
+.Application{
+    .text{
+        display: flex;
+       justify-content: center;
+       background-color: rgb(39, 37, 37);
+       height: 50px;
+       a{
+           padding: 5px 5px 5px 5px ;
+           margin: 5px 20px ;
+           border-radius: 20px;
+           background-color: #c33737;
+           text-decoration: none;
+           color: #FFF;
+       }
+       p{
+           color: #FFF;
+           padding: 5px 10px 0 0 ;
+           margin: 5px 20px ;
+
+       }
+    }
+        
+}
+.my-color{
+    background-color: #c33737;
+}
+
+.container-fluid{
+    width: 1320px;
+    max-width: 100%;
+    margin: auto;
+    a{
+        color: #FFF;
+    }
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
+    
+}
+
+.nav-item{
+    a{
+        padding: 10px!important;
+        color: #FFF!important;
+    }
+}
+
+header{
+    height: 600px;
+    background-image: url(p.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    .description{
+        width: 1320px;
+        max-width: 100%;
+        margin: auto;
+        
+    }
+    .card-text{
+        width: 350px;
+        padding-top: 200px;
+
+
+        h1{
+    font-size: 50px;
+    color: #FFf;
+
+          }
+    p{
+        font-size: 20px;
+        color: #FFF;
+    }       
+    }
+}
+
+.btn{
+    background-color: #c3373700;
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0d6dfd00;
+    --bs-btn-border-color: #fffbfb;
+    --bs-btn-hover-color: rgb(3, 3, 3);
+    --bs-btn-hover-bg: #f1f7f7;
+    --bs-btn-hover-border-color: #080808;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #000000;
+    --bs-btn-active-border-color: #000000;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #000000;
+    --bs-btn-disabled-border-color: #000000;
+}
+
+.description{
+    width: 1320px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    .col_50{
+     width: 50%;
+     padding: 20px;
+     p{
+         font-size: 15px;
+     }
+     h1{
+         font-size: 50px;
+     }
+    }
+}
+
+
+section{
+    width: 1320px;
+    max-width: 100%;
+    margin: auto;
+    .card{
+        border: none;
+    }
+   
+}
+
+.register{
+    width: 100%;
+    height: 600px;
+    background-image: url(forest.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top: 50px;
+    .rov{
+        width: 1320px;
+        max-width: 100%;
+        margin: auto;
+    }
+    .texts{
+        margin-left: 73.5%;
+        width: 350px;
+        padding-top: 200px;
+        direction: rtl;
+        h1{
+            color: #FFF;
+        }
+        p{
+            color: #FFf;
+        }
+       
+    }
+}
+
+footer{
+    height: 100px;
+    width: 1320px;
+    max-width: 100%;
+    margin: auto;
+       
+}
