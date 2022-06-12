@@ -1,682 +1,1432 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-html {
-  scroll-behavior: smooth;
+/*
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+html{
+    scroll-behavior: smooth;
 }
 
+body{
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+
+ .Application{
+     .text{
+       display: flex;
+       justify-content: center;
+        background-color: rgb(39, 37, 37);
+        height: 50px;
+        a{
+            padding: 5px 5px 5px 5px ;
+            margin: 5px 20px ;
+            border-radius: 20px;
+            background-color: #c33737;
+            text-decoration: none;
+            color: #FFF;
+        }
+        p{
+            color: #FFF;
+            padding: 5px 10px 0 0 ;            margin: 5px 20px ;
+
+        }
+     }
+
+ }
+ .my-color{
+     background-color: #c33737;
+ }
+
+ .container-fluid{
+     width: 1320px;
+     max-width: 100%;
+     margin: auto;
+     a{
+         color: #FFF;
+     }
+ }
+
+ .navbar-collapse {
+     flex-basis: 100%;
+     flex-grow: 0;
+     align-items: center;
+
+ }
+
+ .nav-item{
+     a{
+         padding: 10px!important;
+         color: #FFF!important;
+     }
+ }
+
+ header{
+     height: 600px;
+     background-image: url(p.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+     .description{
+         width: 1320px;
+         max-width: 100%;
+         margin: auto;
+
+     }
+     .card-text{
+         width: 350px;
+         padding-top: 200px;
+
+
+         h1{
+     font-size: 50px;
+     color: #FFf;
+
+           }
+     p{
+         font-size: 20px;
+         color: #FFF;
+     }       
+     }
+ }
+
+.btn{    background-color: #c3373700; }/ .btn-primary {    --bs-btn-color: #fff;     --bs-btn-bg: #0d6dfd00;     --bs-btn-border-color: #fffbfb; 
+        --bs-btn-hover-color: rgb(3, 3, 3);
+         --bs-btn-hover-bg: #f1f7f7;     --bs-btn-hover-border-color: #080808;    --bs-btn-focus-shadow-rgb: 49,132,253; 
+             --bs-btn-active-color: #fff;     --bs-btn-active-bg: #000000;     --bs-btn-active-border-color: #000000;  
+                --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);     --bs-btn-disabled-color: #fff;   
+                  --bs-btn-disabled-bg: #000000;    --bs-btn-disabled-border-color: #000000; }
+ .description{
+          width: 1320px;
+               max-width: 100%;
+                    margin: auto;
+                         display: flex;
+                              flex-wrap: wrap;
+                                   .col_50{
+                                       width: 50%;
+                                            padding: 20px;
+                                                  p{
+                                                                font-size: 15px;
+                                                                 }
+                                                                      h1{
+          font-size: 50px;
+      }
+     } }
+ section{
+     width: 1320px;
+    max-width: 100%;
+    margin: auto;
+     .card{
+        border: none;
+     }
+
+ }
+ .register{
+         width: 100%;
+     height: 600px;/     background-image: url(forest.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+   background-size:cover;
+  margin-top: 50px;
+     .rov{
+         width: 1320px;
+         max-width: 100%;
+     }
+     .texts{
+        margin-left: 73.5%;
+         width: 350px;
+        padding-top: 200px;
+         direction: rtl;
+         h1{
+             color: #FFF;
+         }
+         p{
+             color: #FFf;
+         }
+
+    }
+ }
+
+ footer{
+     height: 100px;
+     width: 1320px;
+     max-width: 100%;
+     margin: auto;
+
+ }
+
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 100vh;
+    background-color:rgba(126, 131, 131, 0.795) ;
+    background-image: url(ant2.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:lighten ;
+
+}
+
+
+
+.a{
+    a{
+       font-size: 40px !important;  
+       color: #FFF;
+       font-weight: bold;
+       &:hover{
+           color:#ffc107;
+       }
+       span{
+      font-size: 40px !important;
+  }
+    }
+
+}
+
+.text-warning{
+    font-size: 20px !important;
+
+}
+.nav-link{
+    color: rgb(243, 243, 243);
+    font-size: 20px;
+}
+.navbar-nav{
+    color: rgb(102, 100, 100) !important;
+    --bs-nav-link-hover-color:#ffc107;
+
+}
+
+.headerText{
+    h4{
+        font-size: 30px;
+    }
+    h1{
+        font-size: 60px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 20px;
+    }
+
+
+}
+
+
+.btn{
+    font-size: 20px !important;
+}
+
+.scrolldown{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    color: #FFF;
+    font-size: 40px;
+    &:hover{
+       color:rgb(247, 163, 8);
+    }
+}
+.row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.promo{
+    margin-top: 50px;
+
+
+    .col-4{
+        width: 25%;
+        .promocard{
+
+
+           img{
+            width: 90px;
+            height: 90px;
+            margin-bottom: 20px;
+              }
+           h3{
+            font-size: 35px;
+            color: rgb(78, 76, 76);
+
+            }
+          p{
+              font-size: 20px;
+              margin-top:30px;
+              color: rgb(110, 106, 106);
+
+
+             }
+        }
+    }
+}
+
+.our-work{
+    background-color:#f3f4f8 ;
+    h1{
+        font-size: 45px;
+        font-weight: bold;
+        color: rgb(78, 76, 76);
+    }
+    p{
+        font-size: 20px;
+        color: rgb(110, 106, 106);
+
+    }
+}
+
+.dash{
+    width: 50px;
+    height: 5px;
+    background-color: #ffc107;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.col-4-2{
+    width: 25%;
+    padding-bottom: 30px;
+    .servcard{
+        h1{
+            font-size: 40px;
+            color: #919296;
+            font-weight: bold;
+            &::first-letter{
+                font-size: 90px;
+            }
+        }
+        p{
+            color: #b8b9bd;
+            font-size: 20px;
+
+        }
+    }
+    .btn-primary{
+        --bs-btn-color: #ffc107;
+        --bs-btn-hover-color: #ffc107
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #ffffff00;
+        --bs-btn-border-color: #ffffff00;
+        --bs-btn-hover-color: #ffc107;
+        --bs-btn-hover-bg: #919296;
+        --bs-btn-hover-border-color: #fdfeff;
+        --bs-btn-focus-shadow-rgb: 49,132,253;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #ffffff;
+        --bs-btn-active-border-color: #ffffff;
+        --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+
+    }
+}
+
+.example{
+    h1{
+        font-size: 45px;
+        font-weight: bold;
+        color: rgb(78, 76, 76);
+    }
+    p{
+        font-size: 20px;
+        color: rgb(110, 106, 106);
+
+    }
+
+}
+
+.row-cols-1{
+    .col{
+        img{
+            height: 250px;
+            background-position: center;
+            transition: 1.5s;
+            border-radius: 0px;
+            &:hover{
+                transform: scale(1.3) ;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+.sliders{
+
+    .carousel-indicators [data-bs-target] {
+        box-sizing: content-box;
+        flex: 0 1 auto;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    .carousel-indicators .active {
+        opacity: 1;
+        background-color: black;
+    }
+
+    .carousel-inner{
+        background-image:url(https://images.wallpaperscraft.com/image/single/night_city_buildings_lights_178307_3840x2160.jpg) ;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #313a4b;
+    background-blend-mode: darken;
+    }
+}
+
+.carousel-item{
+    height: 750px;
+    padding-top: 200px;
+    img{
+        width: 80px;
+        height: 80px;
+        margin: auto;
+        border: 3px solid white;
+        border-radius: 50%;
+        margin-bottom: 50px;
+
+    }
+}
+.carousel-text{
+
+    h4{
+        color: white;
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+    p{
+        color: white;
+        font-size: 25px;
+    }
+}
+
+
+.latest{
+    .text-center{
+        h1{
+            font-size: 45px;
+            font-weight: bold;
+            color: rgb(78, 76, 76);
+        }
+        p{
+            font-size: 20px;
+            color: rgb(110, 106, 106);
+
+        }
+    }
+    .card{
+        h1{
+            font-size: 35px ;
+            color: #717173;
+            font-weight: 0;
+        }
+        p{
+            font-size: 20px;
+            color: #717173;
+            i{
+                padding-left: 20px;
+            }
+        }
+        border: none !important;
+    }
+    .btn-primary{
+        --bs-btn-color: #717173 !important;
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #d3181800;
+        --bs-btn-hover-color: #717173!important;
+        --bs-btn-hover-bg: #91929600;
+        --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+        border: none !important;
+        i{
+            margin-left: 10px;
+        }
+
+    }
+
+}
+
+.contact{
+    background-color: #495468;
+.text-center{
+    h1{
+        font-size: 45px;
+        font-weight: 0;
+        color: rgb(255, 255, 255);
+    }
+    p{
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+
+    }
+
+}
+
+   .dis{
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+   .location{
+       .adam{
+           display: block;
+           padding-left: 20px;
+       }
+   }
+    .contact-means{
+        width: 50%;
+        padding: 50px;
+        i{
+                font-size: 30px;
+                color: #ffc107;
+                padding: 10px;
+            }
+            a{
+                color: white;
+                padding: 10px;
+            }
+
+
+    }
+    .for{
+        width: 50%;
+
+
+    }
+    .row{
+        margin-right: calc(0 * var(--bs-gutter-x));
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #495468;
+        background-clip: padding-box;
+        border: 1px solid #ffc107;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 0px;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    button, input, optgroup, select, textarea {
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        margin-bottom: 20px !important;
+    }
+
+    .subject{
+        width: 100% !important;
+    }
+
+    .textarea.form-control {
+        min-height: calc(1.5em + .75rem + 2px);
+        width: 100% !important;
+    }
+
+    .btn-primary {
+    --bs-btn-color:#ffc107;
+    --bs-btn-bg: #495468;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg:#ffc107;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    border: 1px solid #ffc107;
+    border-radius: 20px;
+}
+}
+
+footer{
+    padding: 10px;
+    p{
+        font-size: 20px;
+    }
+    a{
+        color: #ffc107;
+        &:hover{
+            color: black;
+        }
+    }
+}
+
+@media only screen and  (max-width:1030px) and (min-width:780px) {
+    .promo{
+        margin-top: 50px;
+
+
+        .col-4{
+            width: 50%;
+            .promocard{
+            padding: 10px;
+
+               img{
+                width: 90px;
+                height: 90px;
+                margin-bottom: 20px;
+                  }
+               h3{
+                font-size: 35px;
+                color: rgb(78, 76, 76);
+
+                }
+              p{
+                  font-size: 20px;
+                  margin-top:30px;
+                  color: rgb(110, 106, 106);
+
+
+                 }
+            }
+        }
+    }
+
+
+
+    .our-work{
+        background-color:#f3f4f8 ;
+        h1{
+            font-size: 45px;
+            font-weight: bold;
+            color: rgb(78, 76, 76);
+        }
+        p{
+            font-size: 20px;
+            color: rgb(110, 106, 106);
+
+        }
+    }
+
+
+    .col-4-2{
+        width: 50%;
+        padding-bottom: 30px;
+        .servcard{
+            h1{
+                font-size: 40px;
+                color: #919296;
+                font-weight: bold;
+                &::first-letter{
+                    font-size: 90px;
+                }
+            }
+            p{
+                color: #b8b9bd;
+                font-size: 20px;
+
+            }
+        }
+
+    }
+}
+
+@media (max-width: 780px) and (min-width: 420px){
+
+    .promo{
+        margin-top: 50px;
+
+
+        .col-4{
+            width: 100%;
+            .promocard{
+            padding: 10px;
+
+               img{
+                width: 90px;
+                height: 90px;
+                margin-bottom: 20px;
+                  }
+               h3{
+                font-size: 35px;
+                color: rgb(78, 76, 76);
+
+                }
+              p{
+                  font-size: 20px;
+                  margin-top:30px;
+                  color: rgb(110, 106, 106);
+
+
+                 }
+            }
+        }
+    }
+
+
+
+    .our-work{
+        background-color:#f3f4f8 ;
+        h1{
+            font-size: 45px;
+            font-weight: bold;
+            color: rgb(78, 76, 76);
+            text-align: center;
+        }
+        p{
+            font-size: 20px;
+            color: rgb(110, 106, 106);
+
+        }
+    }
+
+
+    .col-4-2{
+        width: 100%;
+        padding-bottom: 30px;
+        .servcard{
+            h1{
+                font-size: 40px;
+                color: #919296;
+                font-weight: bold;
+                &::first-letter{
+                    font-size: 90px;
+                }
+            }
+            p{
+                color: #b8b9bd;
+                font-size: 20px;
+
+            }
+        }
+
+    }
+
+    .contact{
+        background-color: #495468;
+    .text-center{
+        h1{
+            font-size: 45px;
+            font-weight: 0;
+            color: rgb(255, 255, 255);
+        }
+        p{
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+
+        }
+
+    }
+
+       .dis{
+           display: flex;
+           flex-wrap: wrap;
+       }
+
+       .location{
+           .adam{
+               display: block;
+               padding-left: 20px;
+           }
+       }
+        .contact-means{
+            width: 100%;
+            padding: 50px;
+            i{
+                    font-size: 30px;
+                    color: #ffc107;
+                    padding: 10px;
+                }
+                a{
+                    color: white;
+                    padding: 10px;
+                }
+
+
+        }
+        .for{
+            width: 100%;
+
+
+        }
+        .row{
+            margin-right: calc(0 * var(--bs-gutter-x));
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #495468;
+            background-clip: padding-box;
+            border: 1px solid #ffc107;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 0px;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+        button, input, optgroup, select, textarea {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            margin-bottom: 20px !important;
+        }
+
+        .subject{
+            width: 100% !important;
+        }
+
+        .textarea.form-control {
+            min-height: calc(1.5em + .75rem + 2px);
+            width: 100% !important;
+        }
+
+        .btn-primary {
+        --bs-btn-color:#ffc107;
+        --bs-btn-bg: #495468;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg:#ffc107;
+        --bs-btn-focus-shadow-rgb: 49,132,253;
+        --bs-btn-active-color: #fff;
+        border: 1px solid #ffc107;
+        border-radius: 20px;
+    }
+    }
+
+
+
+}
+
+@media  (max-width:420px) {
+    .promo{
+        margin-top: 50px;
+
+
+        .col-4{
+            width: 100%;
+            .promocard{
+            padding: 10px;
+
+               img{
+                width: 90px;
+                height: 90px;
+                margin-bottom: 20px;
+                  }
+               h3{
+                font-size: 35px;
+                color: rgb(78, 76, 76);
+
+                }
+              p{
+                  font-size: 20px;
+                  margin-top:30px;
+                  color: rgb(110, 106, 106);
+
+
+                 }
+            }
+        }
+    }
+
+
+
+    .our-work{
+        background-color:#f3f4f8 ;
+        h1{
+            font-size: 45px;
+            font-weight: bold;
+            color: rgb(78, 76, 76);
+            text-align: center;
+        }
+        p{
+            font-size: 20px;
+            color: rgb(110, 106, 106);
+
+        }
+    }
+
+
+    .col-4-2{
+        width: 100%;
+        padding-bottom: 30px;
+        .servcard{
+            h1{
+                font-size: 40px;
+                color: #919296;
+                font-weight: bold;
+                &::first-letter{
+                    font-size: 90px;
+                }
+            }
+            p{
+                color: #b8b9bd;
+                font-size: 20px;
+
+            }
+        }
+
+    }
+
+    .contact{
+        background-color: #495468;
+    .text-center{
+        h1{
+            font-size: 45px;
+            font-weight: 0;
+            color: rgb(255, 255, 255);
+        }
+        p{
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+
+        }
+
+    }
+
+       .dis{
+           display: flex;
+           flex-wrap: wrap;
+       }
+
+       .location{
+           .adam{
+               display: block;
+               padding-left: 20px;
+           }
+       }
+        .contact-means{
+            width: 100%;
+            padding: 50px;
+            i{
+                    font-size: 30px;
+                    color: #ffc107;
+                    padding: 10px;
+                }
+                a{
+                    color: white;
+                    padding: 10px;
+                }
+
+
+        }
+        .for{
+            width: 100%;
+
+
+        }
+        .row{
+            margin-right: calc(0 * var(--bs-gutter-x));
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #495468;
+            background-clip: padding-box;
+            border: 1px solid #ffc107;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 0px;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+        button, input, optgroup, select, textarea {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            margin-bottom: 20px !important;
+        }
+
+        .subject{
+            width: 100% !important;
+        }
+
+        .textarea.form-control {
+            min-height: calc(1.5em + .75rem + 2px);
+            width: 100% !important;
+        }
+
+        .btn-primary {
+        --bs-btn-color:#ffc107;
+        --bs-btn-bg: #495468;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg:#ffc107;
+        --bs-btn-focus-shadow-rgb: 49,132,253;
+        --bs-btn-active-color: #fff;
+        border: 1px solid #ffc107;
+        border-radius: 20px;
+
+    }
+    }
+
+}
+
+
+
+
+@import url(responsive.scss);
+*/
+@font-face {
+  font-family: Nino;
+  src: url("/font/bpg_nino_mtavruli_bold.ttf");
+}
+@font-face {
+  font-family: Arial;
+  src: url("/font/bpg_arial_2009.ttf");
+}
+@font-face {
+  font-family: Arialbold;
+  src: url(/font/Arial-BoldMT.otf);
+}
 body {
-  font-family: "Oswald", sans-serif;
-  height: 5000px;
+  background-color: #eef0e9;
 }
 
 a {
   text-decoration: none;
 }
 
-header {
-  height: 100vh;
-  background-color: rgba(126, 131, 131, 0.795);
-  background-image: url(ant2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: lighten;
+.container {
+  width: 1124px;
+  max-width: 100%;
 }
 
-.a a {
-  font-size: 40px !important;
-  color: #FFF;
+.sub-nav {
+  background-color: rgba(56, 58, 53, 0.6431372549);
+  border-bottom: 1px solid #6a6a6a;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.lang a {
+  font-family: Nino;
+  font-size: 15px;
+  color: #fff;
   font-weight: bold;
-}
-.a a:hover {
-  color: #ffc107;
-}
-.a a span {
-  font-size: 40px !important;
+  padding-top: 13px;
+  padding-bottom: 4px;
+  display: inline-block;
 }
 
-.text-warning {
-  font-size: 20px !important;
+.menu a {
+  font-family: Nino;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  display: inline-block;
+  padding: 12px 0 6px 24px;
+}
+
+.dropdown-toggle::after {
+  display: none;
 }
 
 .nav-link {
-  color: rgb(243, 243, 243);
-  font-size: 20px;
-}
-
-.navbar-nav {
-  color: rgb(102, 100, 100) !important;
-  --bs-nav-link-hover-color:#ffc107;
-}
-
-.headerText h4 {
-  font-size: 30px;
-}
-.headerText h1 {
-  font-size: 60px;
+  font-family: Nino;
+  font-size: 17px;
+  color: #6b6b6b;
   font-weight: bold;
 }
-.headerText p {
-  font-size: 20px;
-}
 
-.btn {
-  font-size: 20px !important;
-}
-
-.scrolldown {
+.navbar {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 5%;
-  color: #FFF;
-  font-size: 40px;
+  z-index: 2;
+  width: 100%;
+  top: 42px;
 }
-.scrolldown:hover {
-  color: rgb(247, 163, 8);
+.navbar .logo {
+  padding: 13px 0 0 0;
 }
 
-.row {
+.nav-item {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+}
+.nav-item .dog {
+  padding: 1px 4px 5px 12px;
+}
+.nav-item .cat {
+  padding: 9px 12px 5px 21px;
+}
+.nav-item .fish {
+  padding: 9px 12px 5px 25px;
+}
+.nav-item .bird {
+  padding: 9px 12px 5px 24px;
+}
+.nav-item .rabit {
+  padding: 9px 12px 5px 21px;
 }
 
-.promo {
-  margin-top: 50px;
-}
-.promo .col-4 {
-  width: 25%;
-}
-.promo .col-4 .promocard img {
-  width: 90px;
-  height: 90px;
-  margin-bottom: 20px;
-}
-.promo .col-4 .promocard h3 {
-  font-size: 35px;
-  color: rgb(78, 76, 76);
-}
-.promo .col-4 .promocard p {
-  font-size: 20px;
-  margin-top: 30px;
-  color: rgb(110, 106, 106);
+.carousel-item img {
+  height: 900px;
 }
 
-.our-work {
-  background-color: #f3f4f8;
+.card {
+  background-color: rgba(56, 58, 53, 0);
+  z-index: 2;
+  top: 318px;
+  border: none;
+  width: 750px;
 }
-.our-work h1 {
-  font-size: 45px;
-  font-weight: bold;
-  color: rgb(78, 76, 76);
+.card h1 {
+  font-size: 24px;
+  font-family: Nino;
+  color: white;
+  padding-bottom: 8px;
 }
-.our-work p {
-  font-size: 20px;
-  color: rgb(110, 106, 106);
-}
-
-.dash {
-  width: 50px;
-  height: 5px;
-  background-color: #ffc107;
-  margin: auto;
-  border-radius: 20px;
-  margin-top: 20px;
-}
-
-.col-4-2 {
-  width: 25%;
+.card p {
+  font-size: 17px;
+  font-family: Arial;
+  color: white;
+  font-weight: 0;
   padding-bottom: 30px;
 }
-.col-4-2 .servcard h1 {
-  font-size: 40px;
-  color: #919296;
+.card .btn {
+  color: white;
+  font-size: 17px !important;
+  font-family: Nino;
   font-weight: bold;
-}
-.col-4-2 .servcard h1::first-letter {
-  font-size: 90px;
-}
-.col-4-2 .servcard p {
-  color: #b8b9bd;
-  font-size: 20px;
-}
-.col-4-2 .btn-primary {
-  --bs-btn-color: #ffc107;
-  --bs-btn-hover-color: #ffc107
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #ffffff00;
-  --bs-btn-border-color: #ffffff00;
-  --bs-btn-hover-color: #ffc107;
-  --bs-btn-hover-bg: #919296;
-  --bs-btn-hover-border-color: #fdfeff;
-  --bs-btn-focus-shadow-rgb: 49,132,253;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #ffffff;
-  --bs-btn-active-border-color: #ffffff;
-  --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
-}
-
-.example h1 {
-  font-size: 45px;
-  font-weight: bold;
-  color: rgb(78, 76, 76);
-}
-.example p {
-  font-size: 20px;
-  color: rgb(110, 106, 106);
-}
-
-.row-cols-1 .col img {
-  height: 250px;
-  background-position: center;
-  transition: 1.5s;
+  background-color: #e23848;
+  border: none;
   border-radius: 0px;
 }
-.row-cols-1 .col img:hover {
-  transform: scale(1.3);
-  z-index: 1;
+.card .btn:hover {
+  border: none;
+}
+.card .btn a {
+  padding: 20px 20px 20px 20px !important;
+  display: block !important;
 }
 
-.sliders .carousel-indicators [data-bs-target] {
-  box-sizing: content-box;
-  flex: 0 1 auto;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-.sliders .carousel-indicators .active {
-  opacity: 1;
-  background-color: black;
-}
-.sliders .carousel-inner {
-  background-image: url(https://images.wallpaperscraft.com/image/single/night_city_buildings_lights_178307_3840x2160.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #313a4b;
-  background-blend-mode: darken;
-}
-
-.carousel-item {
-  height: 750px;
-  padding-top: 200px;
-}
-.carousel-item img {
-  width: 80px;
-  height: 80px;
-  margin: auto;
-  border: 3px solid white;
-  border-radius: 50%;
-  margin-bottom: 50px;
-}
-
-.carousel-text h4 {
-  color: white;
-  margin-bottom: 40px;
-  font-size: 30px;
-}
-.carousel-text p {
-  color: white;
-  font-size: 25px;
-}
-
-.latest .text-center h1 {
-  font-size: 45px;
-  font-weight: bold;
-  color: rgb(78, 76, 76);
-}
-.latest .text-center p {
-  font-size: 20px;
-  color: rgb(110, 106, 106);
-}
-.latest .card {
-  border: none !important;
-}
-.latest .card h1 {
-  font-size: 35px;
-  color: #717173;
+.carousel-control-next i, .carousel-control-prev i {
+  font-size: 100px;
   font-weight: 0;
 }
-.latest .card p {
-  font-size: 20px;
-  color: #717173;
-}
-.latest .card p i {
-  padding-left: 20px;
-}
-.latest .btn-primary {
-  --bs-btn-color: #717173 !important;
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #d3181800;
-  --bs-btn-hover-color: #717173!important;
-  --bs-btn-hover-bg: #91929600;
-  --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
-  border: none !important;
-}
-.latest .btn-primary i {
-  margin-left: 10px;
-}
 
-.contact {
-  background-color: #495468;
-}
-.contact .text-center h1 {
-  font-size: 45px;
-  font-weight: 0;
-  color: rgb(255, 255, 255);
-}
-.contact .text-center p {
-  font-size: 30px;
-  color: rgb(255, 255, 255);
-}
-.contact .dis {
+.brands .col-25 {
   display: flex;
-  flex-wrap: wrap;
+  margin-top: 20px;
 }
-.contact .location .adam {
-  display: block;
-  padding-left: 20px;
+.brands .col-25 .mispol, .brands .col-25 .royal, .brands .col-25 .nutra, .brands .col-25 .taste, .brands .col-25 .trixie {
+  border: 1px solid #d2d2d2;
+  width: 20%;
+  margin: 10px;
+  background-color: #FFF;
+  height: 110px;
 }
-.contact .contact-means {
-  width: 50%;
-  padding: 50px;
-}
-.contact .contact-means i {
-  font-size: 30px;
-  color: #ffc107;
-  padding: 10px;
-}
-.contact .contact-means a {
-  color: white;
-  padding: 10px;
-}
-.contact .for {
-  width: 50%;
-}
-.contact .row {
-  margin-right: calc(0 * var(--bs-gutter-x));
-}
-.contact .form-control {
-  display: block;
-  width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  background-color: #495468;
-  background-clip: padding-box;
-  border: 1px solid #ffc107;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0px;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-.contact button, .contact input, .contact optgroup, .contact select, .contact textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  margin-bottom: 20px !important;
-}
-.contact .subject {
-  width: 100% !important;
-}
-.contact .textarea.form-control {
-  min-height: calc(1.5em + 0.75rem + 2px);
-  width: 100% !important;
-}
-.contact .btn-primary {
-  --bs-btn-color:#ffc107;
-  --bs-btn-bg: #495468;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg:#ffc107;
-  --bs-btn-focus-shadow-rgb: 49,132,253;
-  --bs-btn-active-color: #fff;
-  border: 1px solid #ffc107;
-  border-radius: 20px;
+.brands .col-25 .mispol img, .brands .col-25 .royal img, .brands .col-25 .nutra img, .brands .col-25 .taste img, .brands .col-25 .trixie img {
+  padding: 13px 13px 0 30px;
+  background-position: center;
+  width: 180px;
+  height: 80px;
 }
 
 footer {
-  padding: 10px;
+  display: flex;
 }
 footer p {
-  font-size: 20px;
-}
-footer a {
-  color: #ffc107;
-}
-footer a:hover {
-  color: black;
+  padding-top: 19px;
+  font-family: Arialbold;
+  font-size: 15px;
+  color: #828282;
 }
 
-@media only screen and (max-width: 1030px) and (min-width: 780px) {
-  .promo {
-    margin-top: 50px;
-  }
-  .promo .col-4 {
-    width: 50%;
-  }
-  .promo .col-4 .promocard {
-    padding: 10px;
-  }
-  .promo .col-4 .promocard img {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 20px;
-  }
-  .promo .col-4 .promocard h3 {
-    font-size: 35px;
-    color: rgb(78, 76, 76);
-  }
-  .promo .col-4 .promocard p {
-    font-size: 20px;
-    margin-top: 30px;
-    color: rgb(110, 106, 106);
-  }
-
-  .our-work {
-    background-color: #f3f4f8;
-  }
-  .our-work h1 {
-    font-size: 45px;
-    font-weight: bold;
-    color: rgb(78, 76, 76);
-  }
-  .our-work p {
-    font-size: 20px;
-    color: rgb(110, 106, 106);
-  }
-
-  .col-4-2 {
-    width: 50%;
-    padding-bottom: 30px;
-  }
-  .col-4-2 .servcard h1 {
-    font-size: 40px;
-    color: #919296;
-    font-weight: bold;
-  }
-  .col-4-2 .servcard h1::first-letter {
-    font-size: 90px;
-  }
-  .col-4-2 .servcard p {
-    color: #b8b9bd;
-    font-size: 20px;
-  }
-}
-@media (max-width: 780px) and (min-width: 420px) {
-  .promo {
-    margin-top: 50px;
-  }
-  .promo .col-4 {
-    width: 100%;
-  }
-  .promo .col-4 .promocard {
-    padding: 10px;
-  }
-  .promo .col-4 .promocard img {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 20px;
-  }
-  .promo .col-4 .promocard h3 {
-    font-size: 35px;
-    color: rgb(78, 76, 76);
-  }
-  .promo .col-4 .promocard p {
-    font-size: 20px;
-    margin-top: 30px;
-    color: rgb(110, 106, 106);
-  }
-
-  .our-work {
-    background-color: #f3f4f8;
-  }
-  .our-work h1 {
-    font-size: 45px;
-    font-weight: bold;
-    color: rgb(78, 76, 76);
-    text-align: center;
-  }
-  .our-work p {
-    font-size: 20px;
-    color: rgb(110, 106, 106);
-  }
-
-  .col-4-2 {
-    width: 100%;
-    padding-bottom: 30px;
-  }
-  .col-4-2 .servcard h1 {
-    font-size: 40px;
-    color: #919296;
-    font-weight: bold;
-  }
-  .col-4-2 .servcard h1::first-letter {
-    font-size: 90px;
-  }
-  .col-4-2 .servcard p {
-    color: #b8b9bd;
-    font-size: 20px;
-  }
-
-  .contact {
-    background-color: #495468;
-  }
-  .contact .text-center h1 {
-    font-size: 45px;
-    font-weight: 0;
-    color: rgb(255, 255, 255);
-  }
-  .contact .text-center p {
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-  }
-  .contact .dis {
+@media only screen and (max-width: 1025px) and (min-width: 780px) {
+  .brands .col-25 {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
   }
-  .contact .location .adam {
-    display: block;
-    padding-left: 20px;
+  .brands .col-25 .mispol, .brands .col-25 .royal, .brands .col-25 .nutra, .brands .col-25 .taste, .brands .col-25 .trixie {
+    border: 1px solid #d2d2d2;
+    width: 33.33333%;
+    margin: 10px;
+    background-color: #FFF;
+    height: 110px;
   }
-  .contact .contact-means {
-    width: 100%;
-    padding: 50px;
+  .brands .col-25 .mispol img, .brands .col-25 .royal img, .brands .col-25 .nutra img, .brands .col-25 .taste img, .brands .col-25 .trixie img {
+    padding: 13px 13px 0 30px;
+    background-position: center;
+    width: 180px;
+    height: 80px;
   }
-  .contact .contact-means i {
-    font-size: 30px;
-    color: #ffc107;
-    padding: 10px;
+
+  .card {
+    background-color: rgba(56, 58, 53, 0);
+    z-index: 2;
+    top: 340px;
+    border: none;
+    width: 500px;
   }
-  .contact .contact-means a {
+  .card h1 {
+    font-size: 20px;
+    font-family: Nino;
     color: white;
-    padding: 10px;
+    padding-bottom: 8px;
   }
-  .contact .for {
-    width: 100%;
+  .card p {
+    font-size: 15px;
+    font-family: Arial;
+    color: white;
+    font-weight: 0;
+    padding-bottom: 30px;
   }
-  .contact .row {
-    margin-right: calc(0 * var(--bs-gutter-x));
-  }
-  .contact .form-control {
-    display: block;
-    width: 100%;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #495468;
-    background-clip: padding-box;
-    border: 1px solid #ffc107;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  .card .btn {
+    color: white;
+    font-size: 15px !important;
+    font-family: Nino;
+    font-weight: bold;
+    background-color: #e23848;
+    border: none;
     border-radius: 0px;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
-  .contact button, .contact input, .contact optgroup, .contact select, .contact textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    margin-bottom: 20px !important;
+  .card .btn:hover {
+    border: none;
   }
-  .contact .subject {
-    width: 100% !important;
+  .card .btn a {
+    padding: 10px 10px 10px 10px !important;
+    display: block !important;
   }
-  .contact .textarea.form-control {
-    min-height: calc(1.5em + 0.75rem + 2px);
-    width: 100% !important;
+
+  .carousel-control-next i, .carousel-control-prev i {
+    font-size: 70px;
+    font-weight: 0;
   }
-  .contact .btn-primary {
-    --bs-btn-color:#ffc107;
-    --bs-btn-bg: #495468;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg:#ffc107;
-    --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    border: 1px solid #ffc107;
-    border-radius: 20px;
+
+  .brands .col-25 {
+    display: flex;
+    margin-top: 20px;
+  }
+  .brands .col-25 .mispol, .brands .col-25 .royal, .brands .col-25 .nutra, .brands .col-25 .taste, .brands .col-25 .trixie {
+    border: 1px solid #d2d2d2;
+    width: 20%;
+    margin: 10px;
+    background-color: #FFF;
+    height: 110px;
+  }
+  .brands .col-25 .mispol img, .brands .col-25 .royal img, .brands .col-25 .nutra img, .brands .col-25 .taste img, .brands .col-25 .trixie img {
+    padding: 13px 13px 0 30px;
+    background-position: center;
+    width: 100%;
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 780px) and (min-width: 415px) {
+  .sub-nav {
+    background-color: rgba(56, 58, 53, 0.6431372549);
+    border-bottom: 1px solid #6a6a6a;
+  }
+
+  .lang a {
+    font-family: Nino;
+    font-size: 10px;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 13px;
+    padding-bottom: 4px;
+    display: inline-block;
+  }
+
+  .menu a {
+    font-family: Nino;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: inline-block;
+    padding: 12px 0 6px 10px;
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  .nav-link {
+    font-family: Nino;
+    font-size: 15px;
+    color: #6b6b6b;
+    font-weight: bold;
+  }
+
+  .navbar .logo {
+    padding: 13px 0 0 0;
+  }
+
+  .carousel-item img {
+    height: 500px;
+  }
+
+  .card {
+    background-color: rgba(56, 58, 53, 0);
+    border: none;
+    width: 400px;
+  }
+  .card h1 {
+    font-size: 15px;
+    font-family: Nino;
+    color: white;
+    padding-bottom: 5px;
+  }
+  .card p {
+    font-size: 10px;
+    font-family: Arial;
+    color: white;
+    font-weight: 0;
+    padding-bottom: 5px;
+  }
+  .card .btn {
+    color: white;
+    font-size: 10px !important;
+    font-family: Nino;
+    font-weight: bold;
+    background-color: #e23848;
+    border: none;
+    border-radius: 0px;
+  }
+  .card .btn:hover {
+    border: none;
+  }
+  .card .btn a {
+    padding: 20px 20px 20px 20px !important;
+    display: block !important;
+  }
+
+  .carousel-control-next i, .carousel-control-prev i {
+    font-size: 40px;
+    font-weight: 0;
+  }
+
+  .brands .col-25 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .brands .col-25 .mispol, .brands .col-25 .royal, .brands .col-25 .nutra, .brands .col-25 .taste, .brands .col-25 .trixie {
+    border: 1px solid #d2d2d2;
+    width: 100%;
+    margin: 10px;
+    background-color: #FFF;
+    height: 110px;
+  }
+  .brands .col-25 .mispol img, .brands .col-25 .royal img, .brands .col-25 .nutra img, .brands .col-25 .taste img, .brands .col-25 .trixie img {
+    padding: 13px 13px 0 30px;
+    background-position: center;
+    width: 100%;
+    height: 100px;
   }
 }
 @media (max-width: 420px) {
-  .promo {
-    margin-top: 50px;
-  }
-  .promo .col-4 {
-    width: 100%;
-  }
-  .promo .col-4 .promocard {
-    padding: 10px;
-  }
-  .promo .col-4 .promocard img {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 20px;
-  }
-  .promo .col-4 .promocard h3 {
-    font-size: 35px;
-    color: rgb(78, 76, 76);
-  }
-  .promo .col-4 .promocard p {
-    font-size: 20px;
-    margin-top: 30px;
-    color: rgb(110, 106, 106);
+  .sub-nav {
+    background-color: rgba(56, 58, 53, 0.6431372549);
+    border-bottom: 1px solid #6a6a6a;
   }
 
-  .our-work {
-    background-color: #f3f4f8;
-  }
-  .our-work h1 {
-    font-size: 45px;
+  .lang a {
+    font-family: Nino;
+    font-size: 10px;
+    color: #fff;
     font-weight: bold;
-    color: rgb(78, 76, 76);
-    text-align: center;
-  }
-  .our-work p {
-    font-size: 20px;
-    color: rgb(110, 106, 106);
+    padding-top: 13px;
+    padding-bottom: 4px;
+    display: inline-block;
   }
 
-  .col-4-2 {
-    width: 100%;
-    padding-bottom: 30px;
+  .menu a {
+    font-family: Nino;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: inline-block;
+    padding: 12px 0 6px 10px;
   }
-  .col-4-2 .servcard h1 {
-    font-size: 40px;
-    color: #919296;
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  .nav-link {
+    font-family: Nino;
+    font-size: 15px;
+    color: #6b6b6b;
     font-weight: bold;
   }
-  .col-4-2 .servcard h1::first-letter {
-    font-size: 90px;
-  }
-  .col-4-2 .servcard p {
-    color: #b8b9bd;
-    font-size: 20px;
+
+  .navbar .logo {
+    padding: 13px 0 0 0;
   }
 
-  .contact {
-    background-color: #495468;
+  .carousel-item img {
+    height: 500px;
   }
-  .contact .text-center h1 {
-    font-size: 45px;
+
+  .card {
+    background-color: rgba(56, 58, 53, 0);
+    border: none;
+    width: 400px;
+  }
+  .card h1 {
+    font-size: 15px;
+    font-family: Nino;
+    color: white;
+    padding-bottom: 5px;
+  }
+  .card p {
+    font-size: 10px;
+    font-family: Arial;
+    color: white;
     font-weight: 0;
-    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
   }
-  .contact .text-center p {
-    font-size: 30px;
-    color: rgb(255, 255, 255);
+  .card .btn {
+    color: white;
+    font-size: 10px !important;
+    font-family: Nino;
+    font-weight: bold;
+    background-color: #e23848;
+    border: none;
+    border-radius: 0px;
   }
-  .contact .dis {
+  .card .btn:hover {
+    border: none;
+  }
+  .card .btn a {
+    padding: 20px 20px 20px 20px !important;
+    display: block !important;
+  }
+
+  .carousel-control-next i, .carousel-control-prev i {
+    font-size: 40px;
+    font-weight: 0;
+  }
+
+  .brands .col-25 {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
   }
-  .contact .location .adam {
-    display: block;
-    padding-left: 20px;
-  }
-  .contact .contact-means {
+  .brands .col-25 .mispol, .brands .col-25 .royal, .brands .col-25 .nutra, .brands .col-25 .taste, .brands .col-25 .trixie {
+    border: 1px solid #d2d2d2;
     width: 100%;
-    padding: 50px;
+    margin: 10px;
+    background-color: #FFF;
+    height: 110px;
   }
-  .contact .contact-means i {
-    font-size: 30px;
-    color: #ffc107;
-    padding: 10px;
-  }
-  .contact .contact-means a {
-    color: white;
-    padding: 10px;
-  }
-  .contact .for {
+  .brands .col-25 .mispol img, .brands .col-25 .royal img, .brands .col-25 .nutra img, .brands .col-25 .taste img, .brands .col-25 .trixie img {
+    padding: 13px 13px 0 30px;
+    background-position: center;
     width: 100%;
-  }
-  .contact .row {
-    margin-right: calc(0 * var(--bs-gutter-x));
-  }
-  .contact .form-control {
-    display: block;
-    width: 100%;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #495468;
-    background-clip: padding-box;
-    border: 1px solid #ffc107;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 0px;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  }
-  .contact button, .contact input, .contact optgroup, .contact select, .contact textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    margin-bottom: 20px !important;
-  }
-  .contact .subject {
-    width: 100% !important;
-  }
-  .contact .textarea.form-control {
-    min-height: calc(1.5em + 0.75rem + 2px);
-    width: 100% !important;
-  }
-  .contact .btn-primary {
-    --bs-btn-color:#ffc107;
-    --bs-btn-bg: #495468;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg:#ffc107;
-    --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    border: 1px solid #ffc107;
-    border-radius: 20px;
+    height: 100px;
   }
 }
 
