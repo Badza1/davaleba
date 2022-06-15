@@ -1395,12 +1395,24 @@ footer p {
     background-color: #e23848;
     border: none;
     border-radius: 0px;
+   
   }
+ 
+  .card .btn {
+    color: white;
+    font-size: 17px !important;
+    font-family: Nino;
+    font-weight: bold;
+    background-color: #e23848;
+    border: none;
+    border-radius: 0px;
+    padding: 15px 20px;
+}
   .card .btn:hover {
     border: none;
   }
   .card .btn a {
-    padding: 20px 20px 20px 20px !important;
+   
     display: block !important;
   }
 
