@@ -972,14 +972,12 @@ footer{
 }
 
 
-
-
 @import url(responsive.scss);
 */
 @font-face {
   font-family: Nino;
   src: url("/font/bpg_nino_mtavruli_bold.ttf");
-  
+
 }
 @font-face {
   font-family: Arial;
@@ -1431,4 +1429,4 @@ footer p {
   }
 }
 
-/*# sourceMappingURL=app.css.map */
+
